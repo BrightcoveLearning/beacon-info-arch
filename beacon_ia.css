@@ -1,0 +1,154 @@
+/* DEFINE COLORS - palette
+green: #00B057;
+yellow: #FFBA00;
+yellow_5%: #FFFBF2;
+red: #D33D00;
+red_5%:#FDF6F3;
+navydark: #030D28;
+navy: #072290;
+navylight: #092DBD;
+navy_gray: #F2F4F9;
+black:#01050E;
+gray4:4D5056
+gray3:E5E6E6
+gray2:F2F2F3
+gray1:F9F9F9;
+white:FFFFFF
+cyan:#2AC1FF
+plum:8F14CC
+
+:root{
+  --success: #00B057;
+  --warning: #FFBA00;
+  --warning_bg: #FFFBF2;
+  --error: #D33D00;
+  --error_bg: #FDF6F3;
+  --nav: #030D28;
+  --CTA: #072290;
+  --CTA_hover: #092DBD;
+  --link: #092DBD;
+  --bg-main: #F9F9F9;
+  --bg-accent: #F2F2F3;
+  --pill: #F2F4F9;
+  --text: #01050E;
+  --field: #FFFFFF;
+}
+*/
+/* END COLORS */
+/* font-scale perfect fourth
+0.422em (6.76px)
+0.563em (9.00px)
+0.75em (12.00px
+base: 1em / 16 pt
+1.333em (21.33px)
+1.777em (28.43px)
+2.369em (37.90px)
+3.157em (50.52px)
+4.209em (67.34px)
+*/
+
+/* ---------------------------------- base ---------------------------------- */
+
+body {
+  background-color: #01050e;
+  color: #f9f9f9;
+}
+a {
+  color: #072290;
+}
+button {
+  background-color: #072290;
+  color: #fff;
+}
+nav {
+  background-color: #f2f2f3;
+  color: #01050e;
+}
+
+ol {
+  padding: 0;
+}
+ol li {
+  list-style: none;
+}
+
+footer {
+  bottom: 6px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+#export-data {
+  background-color: #fff;
+  border: none;
+  color: #01050e;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 3px 8px;
+}
+#export-data:hover {
+  background-color: #01050e;
+  border: none;
+  color: #fff;
+}
+
+/* ------------------------------- layout-step ------------------------------ */
+
+#layout-step .layout-nav li {
+  cursor: grab;
+}
+
+#layout-step #fixed-top {
+  background-color: #222;
+  color: #fff;
+  height: 270px;
+}
+#layout-step .remove-block {
+  background-color: transparent;
+  border: none;
+  color: #01050e;
+  padding: 0;
+}
+
+#layout > li {
+  width: 100%;
+  margin: 8px 0;
+  overflow: scroll;
+}
+
+.carousel {
+  padding: 0;
+  width: 99999px;
+}
+.carousel li {
+  background-color: #e5e6e6;
+  color: #01050e;
+  display: inline-block;
+  height: 245px;
+  padding: 30px;
+  text-align: center;
+  width: 170px;
+}
+.carousel .active {
+  padding-top: 38px;
+  height: 261px;
+  width: 186px;
+}
+
+.grid {
+  overflow: hidden;
+  max-height: 350px;
+}
+
+.grid li {
+  background-color: #e5e6e6;
+  color: #01050e;
+  display: block;
+  float: left;
+  height: 90px;
+  margin: 0 3px 8px;
+  padding-top: 30px;
+  text-align: center;
+  width: 160px;
+}

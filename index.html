@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+ <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="node_modules/\@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+ <link href="beacon_ia.css" rel="stylesheet">
+</head>
+<body class="container-fluid">
+
+  <section id="content-step" class="row">
+    <nav class="col-4">
+      <h2>Welcome! Let's talk content </h2>
+      <p>Now it's time to make decisions on how your content is organized.</p>
+      <p>Which of the following best describe the kind of content you stream</p>
+      <ol>
+        <li>
+          <label>
+            <input type="checkbox" id="contentType" name="ContentType" value="media">
+            Entertainment
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" id="contentType" name="ContentType" value="sports">
+            Sports
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" id="contentType" name="ContentType" value="news">
+            News / Weather
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" id="contentType" name="ContentType" value="edu">
+            Educational
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" id="contentType" name="ContentType" value="other">
+            Other
+          </label>
+        </li>
+      </ol>
+      <button class="next">Let's do this!</button>
+    </nav>
+    <div class="col-8 main">
+      <img src="imgs/Preview.png">
+    </div>
+  </section> <!-- end content-step -->
+
+  <section id="layout-step" class="row" hidden>
+    <nav class="col-4">
+      <ol class="layout-nav">
+        <li><button class="remove-block far fa-minus-square"></i> Featured</li>
+        <li><button class="remove-block far fa-minus-square"></i> Recently Watched</li>
+        <li><button class="remove-block far fa-minus-square"></i> Most Watched</li>
+        <li><button class="remove-block far fa-minus-square"></i> Favorites</li>
+        <li><button class="remove-block far fa-minus-square"></button> ${name}</li>
+      </ol>
+      <form id="add-block">
+        <i class="far fa-plus-square"></i> <input type="text" name="add-block" placeholder="Movies">
+      </form>
+    </nav>
+    <div class="col-8 main">
+      <div id="fixed-top">
+        <h1>Hero</h1>
+        <small>2019 3h 22m</small>
+        <p>
+          Despite his parole terms, Hoffa undertakes a plan to reclaim
+          his power atop the Teamsters. Hoffa's growing disrespect for
+          other Teamster leaders and related crime family interests
+          begins to worry Russell.
+        </p>
+      </div>
+      <ol id="layout">
+        <li>
+          <form class="block-layout">
+            <h3>${name}</h3>
+            <label><input type="radio" name="favorites-block" value="carousel"> Carousel</label>
+            <label><input type="radio" name="favorites-block" value="grid"> Grid</label>
+          </form>
+          <ol class="${layout}">
+            <li>Video 1</li>
+            <li class="active">Video 2</li>
+            <li>Video 3</li>
+            <li>Video 4</li>
+            <li>Video 5</li>
+            <li>Video 6</li>
+            <li>Video 7</li>
+          </ol>
+        </li>
+        <li>
+          <form class="block-layout">
+            <h3>Recently Watched</h3>
+            <label><input type="radio" name="favorites-block" value="carousel"> Carousel</label>
+            <label><input type="radio" name="favorites-block" value="grid" checked> Grid</label>
+          </form>
+          <ol class="grid">
+            <li>Video 1</li>
+            <li>Video 2</li>
+            <li>Video 3</li>
+            <li>Video 4</li>
+            <li>Video 5</li>
+            <li>Video 6</li>
+            <li>Video 7</li>
+          </ol>
+        </li>
+        <li>
+          <form class="block-layout">
+            <h3>Most Watched</h3>
+            <label><input type="radio" name="favorites-block" value="carousel" checked> Carousel</label>
+            <label><input type="radio" name="favorites-block" value="grid"> Grid</label>
+          </form>
+          <ol class="carousel">
+            <li>Video 1</li>
+            <li>Video 2</li>
+            <li>Video 3</li>
+            <li>Video 4</li>
+            <li>Video 5</li>
+            <li>Video 6</li>
+            <li>Video 7</li>
+          </ol>
+        </li>
+        <li>
+          <form class="block-layout">
+            <h3>Favorites</h3>
+            <label><input type="radio" name="favorites-block" value="carousel" checked> Carousel</label>
+            <label><input type="radio" name="favorites-block" value="grid"> Grid</label>
+          </form>
+          <ol class="carousel">
+            <li>Video 1</li>
+            <li>Video 2</li>
+            <li>Video 3</li>
+            <li>Video 4</li>
+            <li>Video 5</li>
+            <li>Video 6</li>
+            <li>Video 7</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </section> <!-- end layout-step -->
+  <footer hidden>
+    <button id="export-data"><i class="fas fa-cloud-upload-alt"></i> Export configuration</button>
+  </footer>
+  <script src="node_modules/sortablejs/Sortable.min.js"></script>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

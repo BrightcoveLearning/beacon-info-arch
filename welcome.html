@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!--  <link rel="stylesheet" type="text/css" href="beacon_ia.css"> -->
+</head>
+<style>
+  body {
+    display: flex;
+    font-family: "open-sans", sans-serif;
+    background-color: #F9F9F9;
+  }
+  a {
+    color: #072290;
+    font-size: 1em;
+  }
+  label {
+    color: #01050E;
+    font-size: 1em;
+  }
+  li {
+    background-color: #F2F2F3;
+  }
+  .main {
+    flex: 1;
+  }
+  nav {
+    align-items: stretch;
+    background-color: #072290;
+    padding: 5px 10px;
+  }
+  section {
+    margin: 0 10px;
+  }
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+  ol li {
+    list-style: none;
+  }
+  #fixed-top {
+    margin: 0 0 10px;
+  }
+  .main li {
+    background-color:  #F2F2F3;
+    margin-bottom: 3px;
+    padding: 20px;
+  }
+  .main label {
+    background-color: #FFFFFF;
+    margin-right: 10px;
+    padding: 4px;
+  }
+  .main span {
+    margin-right: 10px;
+    padding: 4px;
+  }
+</style>
+<body>
+  <nav>
+    <h1> Welcome! Let's talk content </h1>
+    <p> Now it's time to make decisions on how your content is organized. </p>
+    <p> Which of the following best describe the kind of content you stream </p>
+    <ol>
+      <li>
+        <label>
+          <input type="checkbox" id="contentType" name="ContentType" value="media">
+          media/entertainment
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" id="contentType" name="ContentType" value="sports">
+          Sports
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" id="contentType" name="ContentType" value="news">
+          news / weather
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" id="contentType" name="ContentType" value="edu">
+          educational / classes / hobbies
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" id="contentType" name="ContentType" value="other">
+          other
+        </label>
+      </li>
+    </ol>
+    <a href="index.html">Let's do this!</a>
+  </nav>
+  <section class="main">
+    <img src="imgs/Preview.png">
+  </section>
+</body>
+</html>

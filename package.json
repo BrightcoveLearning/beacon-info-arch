@@ -1,0 +1,20 @@
+{
+  "name": "beacon-info-arch",
+  "version": "1.0.0",
+  "description": "A tool to collect the necessary info to layout Beacon apps.",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brightcove, Inc.",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap": "^4.4.1",
+    "sortablejs": "^1.10.2"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
+}
